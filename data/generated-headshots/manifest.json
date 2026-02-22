@@ -1,0 +1,402 @@
+[
+  {
+    "id": "p1",
+    "name": "Dario Amodei",
+    "prompt": "Professional studio headshot of a fictional executive named Dario Amodei. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p1.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.481Z"
+  },
+  {
+    "id": "p2",
+    "name": "Sarah Chen",
+    "prompt": "Professional studio headshot of a fictional executive named Sarah Chen. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p2.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.509Z"
+  },
+  {
+    "id": "p3",
+    "name": "Marcus Johnson",
+    "prompt": "Professional studio headshot of a fictional executive named Marcus Johnson. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p3.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p4",
+    "name": "Sam Altman",
+    "prompt": "Professional studio headshot of a fictional executive named Sam Altman. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p4.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p5",
+    "name": "Mina Patel",
+    "prompt": "Professional studio headshot of a fictional executive named Mina Patel. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p5.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p6",
+    "name": "Claire Hughes",
+    "prompt": "Professional studio headshot of a fictional executive named Claire Hughes. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p6.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p7",
+    "name": "Diana Lin",
+    "prompt": "Professional studio headshot of a fictional executive named Diana Lin. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p7.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p8",
+    "name": "Ivan Ivanov",
+    "prompt": "Professional studio headshot of a fictional executive named Ivan Ivanov. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p8.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p9",
+    "name": "Daniel Brooks",
+    "prompt": "Professional studio headshot of a fictional executive named Daniel Brooks. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p9.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.511Z"
+  },
+  {
+    "id": "p10",
+    "name": "Nina K",
+    "prompt": "Professional studio headshot of a fictional executive named Nina K. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p10.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.512Z"
+  },
+  {
+    "id": "p11",
+    "name": "Emily Hart",
+    "prompt": "Professional studio headshot of a fictional executive named Emily Hart. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p11.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.512Z"
+  },
+  {
+    "id": "p12",
+    "name": "Sasha Ivanov",
+    "prompt": "Professional studio headshot of a fictional executive named Sasha Ivanov. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p12.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.512Z"
+  },
+  {
+    "id": "p13",
+    "name": "Priya Shah",
+    "prompt": "Professional studio headshot of a fictional executive named Priya Shah. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p13.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.512Z"
+  },
+  {
+    "id": "p14",
+    "name": "Maya Chen",
+    "prompt": "Professional studio headshot of a fictional executive named Maya Chen. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p14.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p15",
+    "name": "Pietro Zullo",
+    "prompt": "Professional studio headshot of a fictional executive named Pietro Zullo. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p15.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p16",
+    "name": "Luigi Pederzani",
+    "prompt": "Professional studio headshot of a fictional executive named Luigi Pederzani. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p16.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p17",
+    "name": "Sasha Orloff",
+    "prompt": "Professional studio headshot of a fictional executive named Sasha Orloff. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p17.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p18",
+    "name": "Andy Su",
+    "prompt": "Professional studio headshot of a fictional executive named Andy Su. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p18.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p19",
+    "name": "Michael Grinich",
+    "prompt": "Professional studio headshot of a fictional executive named Michael Grinich. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p19.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p20",
+    "name": "Matthew Prince",
+    "prompt": "Professional studio headshot of a fictional executive named Matthew Prince. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p20.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p21",
+    "name": "Jon Xu",
+    "prompt": "Professional studio headshot of a fictional executive named Jon Xu. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p21.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p22",
+    "name": "Tamas Kovacs",
+    "prompt": "Professional studio headshot of a fictional executive named Tamas Kovacs. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p22.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p23",
+    "name": "Leah Ulip",
+    "prompt": "Professional studio headshot of a fictional executive named Leah Ulip. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p23.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p24",
+    "name": "Garrett Cason",
+    "prompt": "Professional studio headshot of a fictional executive named Garrett Cason. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p24.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p25",
+    "name": "Christian Pickett",
+    "prompt": "Professional studio headshot of a fictional executive named Christian Pickett. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p25.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p26",
+    "name": "Bera Sogut",
+    "prompt": "Professional studio headshot of a fictional executive named Bera Sogut. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p26.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p27",
+    "name": "Saarth Shah",
+    "prompt": "Professional studio headshot of a fictional executive named Saarth Shah. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p27.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p28",
+    "name": "Christopher Price",
+    "prompt": "Professional studio headshot of a fictional executive named Christopher Price. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p28.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p29",
+    "name": "Henry Wang",
+    "prompt": "Professional studio headshot of a fictional executive named Henry Wang. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p29.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p30",
+    "name": "Priya Khandelwal",
+    "prompt": "Professional studio headshot of a fictional executive named Priya Khandelwal. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p30.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p31",
+    "name": "Priti Rangnekar",
+    "prompt": "Professional studio headshot of a fictional executive named Priti Rangnekar. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p31.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p32",
+    "name": "Rini Khandelwal",
+    "prompt": "Professional studio headshot of a fictional executive named Rini Khandelwal. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p32.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p33",
+    "name": "Sardor Rahmatulloev",
+    "prompt": "Professional studio headshot of a fictional executive named Sardor Rahmatulloev. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p33.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p34",
+    "name": "Pragya Saboo",
+    "prompt": "Professional studio headshot of a fictional executive named Pragya Saboo. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p34.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p35",
+    "name": "Spandana Govindgari",
+    "prompt": "Professional studio headshot of a fictional executive named Spandana Govindgari. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p35.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p36",
+    "name": "Ged Ossman",
+    "prompt": "Professional studio headshot of a fictional executive named Ged Ossman. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p36.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p37",
+    "name": "Vatsal Trivedi",
+    "prompt": "Professional studio headshot of a fictional executive named Vatsal Trivedi. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p37.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p38",
+    "name": "Chris Leggett",
+    "prompt": "Professional studio headshot of a fictional executive named Chris Leggett. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p38.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p39",
+    "name": "Isabela Rodriguez",
+    "prompt": "Professional studio headshot of a fictional executive named Isabela Rodriguez. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p39.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p40",
+    "name": "Tony Montes",
+    "prompt": "Professional studio headshot of a fictional executive named Tony Montes. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p40.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p41",
+    "name": "Vir Sanghavi",
+    "prompt": "Professional studio headshot of a fictional executive named Vir Sanghavi. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p41.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p42",
+    "name": "Brendan Foody",
+    "prompt": "Professional studio headshot of a fictional executive named Brendan Foody. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p42.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p43",
+    "name": "Adarsh Hiremath",
+    "prompt": "Professional studio headshot of a fictional executive named Adarsh Hiremath. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p43.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p44",
+    "name": "David Hsu",
+    "prompt": "Professional studio headshot of a fictional executive named David Hsu. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p44.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p45",
+    "name": "Pedro Franceschi",
+    "prompt": "Professional studio headshot of a fictional executive named Pedro Franceschi. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p45.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p46",
+    "name": "Henrique Dubugras",
+    "prompt": "Professional studio headshot of a fictional executive named Henrique Dubugras. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p46.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p47",
+    "name": "Guillermo Rauch",
+    "prompt": "Professional studio headshot of a fictional executive named Guillermo Rauch. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p47.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p48",
+    "name": "Alexandr Wang",
+    "prompt": "Professional studio headshot of a fictional executive named Alexandr Wang. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p48.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p49",
+    "name": "Scott Wu",
+    "prompt": "Professional studio headshot of a fictional executive named Scott Wu. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p49.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  },
+  {
+    "id": "p50",
+    "name": "Steven Hao",
+    "prompt": "Professional studio headshot of a fictional executive named Steven Hao. Business attire, neutral background, crisp lighting, realistic facial detail, no text, no watermark.",
+    "file": "/Users/attilasukosd/build/dealpulse-hackathon/data/generated-headshots/p50.png",
+    "source": "existing",
+    "timestamp": "2026-02-21T10:44:34.513Z"
+  }
+]

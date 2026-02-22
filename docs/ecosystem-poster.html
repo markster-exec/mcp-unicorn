@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Chat. Entire Business.</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #050a05;
+    color: #e0ffe0;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(1,255,0,0.012) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(1,255,0,0.012) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .poster {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 36px 0 50px;
+  }
+
+  /* === HEADER === */
+  .header {
+    text-align: center;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, #01ff00 0%, #00dd33 40%, #01ff00 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header .event {
+    font-size: 0.8rem;
+    color: #556655;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+  }
+
+  .header .value-prop {
+    font-size: 1.05rem;
+    color: #88aa88;
+    font-weight: 400;
+    margin-top: 10px;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+  }
+
+  .header .value-prop strong { color: #bbddbb; }
+
+  /* === ECOSYSTEM === */
+  .ecosystem {
+    position: relative;
+    width: 1100px;
+    height: 900px;
+    margin: 0 auto;
+  }
+
+  .connections-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .conn-line {
+    stroke: url(#lineGrad);
+    stroke-width: 1.5;
+    fill: none;
+  }
+
+  @keyframes pulse-line {
+    0%, 100% { opacity: 0.12; }
+    50% { opacity: 0.35; }
+  }
+  .conn-line { animation: pulse-line 4s ease-in-out infinite; }
+  .conn-line:nth-child(odd) { animation-delay: 0.5s; }
+  .conn-line:nth-child(3) { animation-delay: 1.2s; }
+  .conn-line:nth-child(5) { animation-delay: 1.8s; }
+  .conn-line:nth-child(7) { animation-delay: 2.4s; }
+
+  .conn-dot { fill: #01ff00; opacity: 0.5; }
+
+  /* === HUB === */
+  .hub {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+  }
+
+  .hub-outer {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 2px solid rgba(1, 255, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: radial-gradient(circle, rgba(1, 255, 0, 0.07) 0%, rgba(5, 10, 5, 0.97) 70%);
+  }
+
+  @keyframes hub-glow {
+    0%, 100% { box-shadow: 0 0 60px rgba(1,255,0,0.06), 0 0 120px rgba(1,255,0,0.03); }
+    50% { box-shadow: 0 0 80px rgba(1,255,0,0.1), 0 0 160px rgba(1,255,0,0.05); }
+  }
+  .hub-outer { animation: hub-glow 6s ease-in-out infinite; }
+
+  .hub-outer::before {
+    content: '';
+    position: absolute;
+    inset: -18px;
+    border-radius: 50%;
+    border: 1px solid rgba(1, 255, 0, 0.06);
+  }
+
+  .hub-outer::after {
+    content: '';
+    position: absolute;
+    inset: -36px;
+    border-radius: 50%;
+    border: 1px solid rgba(1, 255, 0, 0.03);
+  }
+
+  .hub-platforms {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .hub-platform {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: rgba(1, 255, 0, 0.1);
+    border: 1px solid rgba(1, 255, 0, 0.2);
+    color: #aaffaa;
+  }
+
+  .hub-big-num {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #01ff00;
+    line-height: 1;
+    margin-top: -2px;
+  }
+
+  .hub-big-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #99cc99;
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+
+  .hub-diff {
+    font-size: 0.5rem;
+    color: #667766;
+    margin-top: 8px;
+  }
+
+  .hub-sponsors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 8px;
+    max-width: 200px;
+  }
+
+  .hub-sp {
+    font-size: 0.4rem;
+    font-weight: 600;
+    padding: 1px 5px;
+    border-radius: 2px;
+    background: rgba(1, 255, 0, 0.06);
+    border: 1px solid rgba(1, 255, 0, 0.12);
+    color: #77aa77;
+    white-space: nowrap;
+  }
+
+  /* === NODES === */
+  .node {
+    position: absolute;
+    width: 215px;
+    z-index: 6;
+    background: rgba(8, 16, 8, 0.94);
+    border: 1px solid rgba(1, 255, 0, 0.1);
+    border-radius: 12px;
+    padding: 14px 16px;
+    backdrop-filter: blur(8px);
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+
+  .node:hover {
+    border-color: rgba(1, 255, 0, 0.3);
+    box-shadow: 0 0 30px rgba(1, 255, 0, 0.05);
+    transform: scale(1.02);
+  }
+
+  /* 8 nodes radially positioned. Hub center: 550, 450. */
+  .node-0 { left: 442px; top: 10px; }
+  .node-1 { left: 800px; top: 100px; }
+  .node-2 { left: 880px; top: 370px; }
+  .node-3 { left: 800px; top: 640px; }
+  .node-4 { left: 442px; top: 740px; }
+  .node-5 { left: 85px; top: 640px; }
+  .node-6 { left: 5px; top: 370px; }
+  .node-7 { left: 85px; top: 100px; }
+
+  .node-top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 3px;
+  }
+
+  .node-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #e0ffe0;
+    line-height: 1.2;
+  }
+
+  .node-source {
+    margin-left: auto;
+    font-size: 0.48rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: rgba(1, 255, 0, 0.08);
+    border: 1px solid rgba(1, 255, 0, 0.15);
+    color: #88dd88;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .node-desc {
+    font-size: 0.6rem;
+    color: #778877;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+
+  .node-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-bottom: 6px;
+  }
+
+  .chip {
+    font-size: 0.52rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .chip-built {
+    background: rgba(1, 255, 0, 0.1);
+    border: 1px solid rgba(1, 255, 0, 0.2);
+    color: #01ff00;
+  }
+
+  .chip-sponsor {
+    background: rgba(1, 255, 0, 0.06);
+    border: 1px solid rgba(1, 255, 0, 0.15);
+    color: #88ff88;
+  }
+
+  .replaces-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .replaces-label {
+    font-size: 0.46rem;
+    color: #445544;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    margin-right: 1px;
+  }
+
+  .chip-alt {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #667766;
+    font-size: 0.48rem;
+    font-weight: 500;
+    padding: 1px 5px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* === FOOTER === */
+  .footer {
+    text-align: center;
+    padding-top: 16px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .footer .cta {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e0ffe0;
+    margin-bottom: 4px;
+  }
+
+  .footer .credit {
+    font-size: 0.72rem;
+    color: #556655;
+  }
+
+  .sponsor-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+
+  .sponsor-pill {
+    font-size: 0.62rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(1, 255, 0, 0.04);
+    border: 1px solid rgba(1, 255, 0, 0.1);
+    color: #99dd99;
+  }
+
+  .sponsor-pill .role {
+    color: #556655;
+    font-weight: 400;
+  }
+
+  .ecosystem::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(1,255,0,0.02) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="poster">
+  <div class="header">
+    <h1>Your Entire Business. One Conversation.</h1>
+    <div class="event">YC MCP Apps Hackathon / Feb 21, 2026</div>
+    <div class="value-prop">
+      Open Claude or ChatGPT. Ask about your business. <strong>Pipeline, signals, pricing, financials, content, outreach.</strong> 32 MCP tools replace the 8 to 12 SaaS products every founder juggles.
+    </div>
+  </div>
+
+  <div class="ecosystem">
+    <svg class="connections-svg" viewBox="0 0 1100 900">
+      <defs>
+        <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#01ff00" stop-opacity="0.3" />
+          <stop offset="50%" stop-color="#01ff00" stop-opacity="0.08" />
+          <stop offset="100%" stop-color="#01ff00" stop-opacity="0.3" />
+        </linearGradient>
+      </defs>
+      <circle cx="550" cy="450" r="360" stroke="rgba(1,255,0,0.03)" stroke-width="1" fill="none" />
+      <circle cx="550" cy="450" r="240" stroke="rgba(1,255,0,0.02)" stroke-width="1" fill="none" stroke-dasharray="4 8" />
+      <!-- Lines from hub center (550,450) to each node -->
+      <line class="conn-line" x1="550" y1="450" x2="550" y2="75" />
+      <line class="conn-line" x1="550" y1="450" x2="908" y2="165" />
+      <line class="conn-line" x1="550" y1="450" x2="988" y2="435" />
+      <line class="conn-line" x1="550" y1="450" x2="908" y2="705" />
+      <line class="conn-line" x1="550" y1="450" x2="550" y2="805" />
+      <line class="conn-line" x1="550" y1="450" x2="193" y2="705" />
+      <line class="conn-line" x1="550" y1="450" x2="113" y2="435" />
+      <line class="conn-line" x1="550" y1="450" x2="193" y2="165" />
+      <circle class="conn-dot" cx="550" cy="75" r="3" />
+      <circle class="conn-dot" cx="908" cy="165" r="3" />
+      <circle class="conn-dot" cx="988" cy="435" r="3" />
+      <circle class="conn-dot" cx="908" cy="705" r="3" />
+      <circle class="conn-dot" cx="550" cy="805" r="3" />
+      <circle class="conn-dot" cx="193" cy="705" r="3" />
+      <circle class="conn-dot" cx="113" cy="435" r="3" />
+      <circle class="conn-dot" cx="193" cy="165" r="3" />
+    </svg>
+
+    <!-- Hub -->
+    <div class="hub">
+      <div class="hub-outer">
+        <div class="hub-platforms">
+          <span class="hub-platform">Claude</span>
+          <span class="hub-platform">ChatGPT</span>
+        </div>
+        <div class="hub-big-num">32</div>
+        <div class="hub-big-label">production MCP tools</div>
+        <div class="hub-diff">Bidirectional UI / 12 Interactive Scenes</div>
+        <div class="hub-sponsors-row">
+          <span class="hub-sp">Anthropic</span>
+          <span class="hub-sp">OpenAI</span>
+          <span class="hub-sp">Puzzle</span>
+          <span class="hub-sp">WorkOS</span>
+          <span class="hub-sp">Cloudflare</span>
+          <span class="hub-sp">Manufact</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 0: See My Business (top) -->
+    <div class="node node-0">
+      <div class="node-top">
+        <span class="node-name">See My Business</span>
+        <span class="node-source">Markster</span>
+      </div>
+      <div class="node-desc">Full business state in one call. MRR, margins, pipeline, tasks, notifications, KPI dashboard.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">KPI Dashboard</span>
+        <span class="chip chip-built">Pipeline</span>
+        <span class="chip chip-built">Tasks</span>
+        <span class="chip chip-built">Notifications</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">HubSpot</span>
+        <span class="chip chip-alt">Salesforce</span>
+        <span class="chip chip-alt">Databox</span>
+        <span class="chip chip-alt">HighLevel</span>
+      </div>
+    </div>
+
+    <!-- 1: Research Anything (top right) -->
+    <div class="node node-1">
+      <div class="node-top">
+        <span class="node-name">Research Anything</span>
+        <span class="node-source">Markster + Apollo</span>
+      </div>
+      <div class="node-desc">Live company enrichment. Team size, funding, tech stack, contacts. Any domain, real time.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Apollo Live</span>
+        <span class="chip chip-built">Company Profiles</span>
+        <span class="chip chip-built">Contacts</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">ZoomInfo</span>
+        <span class="chip chip-alt">Clearbit</span>
+        <span class="chip chip-alt">Perplexity</span>
+        <span class="chip chip-alt">Sales Nav</span>
+      </div>
+    </div>
+
+    <!-- 2: Spot Buyers (right) -->
+    <div class="node node-2">
+      <div class="node-top">
+        <span class="node-name">Spot Buyers</span>
+        <span class="node-source">Markster</span>
+      </div>
+      <div class="node-desc">Person-level intent signals. Pricing page visits, ROI calculator, demo requests. Scored and ranked.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Intent Signals</span>
+        <span class="chip chip-built">Score Engine</span>
+        <span class="chip chip-built">Activity</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">6sense</span>
+        <span class="chip chip-alt">Bombora</span>
+        <span class="chip chip-alt">RB2B</span>
+        <span class="chip chip-alt">G2 Intent</span>
+      </div>
+    </div>
+
+    <!-- 3: Price and Model Deals (bottom right) -->
+    <div class="node node-3">
+      <div class="node-top">
+        <span class="node-name">Price and Model Deals</span>
+        <span class="node-source">Markster + Puzzle</span>
+      </div>
+      <div class="node-desc">Interactive pricing simulator. Drag a slider, see MRR, margin, runway impact live. EV curves and close probability.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Pricing Slider</span>
+        <span class="chip chip-built">EV Curves</span>
+        <span class="chip chip-built">Deal Impact</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">Spreadsheets</span>
+        <span class="chip chip-alt">Baremetrics</span>
+        <span class="chip chip-alt">ProfitWell</span>
+      </div>
+    </div>
+
+    <!-- 4: Plan My Day (bottom) -->
+    <div class="node node-4">
+      <div class="node-top">
+        <span class="node-name">Plan My Day</span>
+        <span class="node-source">Markster</span>
+      </div>
+      <div class="node-desc">Time-boxed action plans ranked by revenue impact. Interactive Go buttons jump to the right tool.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Priority Engine</span>
+        <span class="chip chip-built">Time Blocks</span>
+        <span class="chip chip-built">Go Buttons</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">Asana</span>
+        <span class="chip chip-alt">Monday</span>
+        <span class="chip chip-alt">ClickUp</span>
+        <span class="chip chip-alt">Notion AI</span>
+      </div>
+    </div>
+
+    <!-- 5: Prospect Everywhere (bottom left) -->
+    <div class="node node-5">
+      <div class="node-top">
+        <span class="node-name">Prospect Everywhere</span>
+        <span class="node-source">Markster</span>
+      </div>
+      <div class="node-desc">Cold email sequences, lead enrollment, domain warmup, deliverability health. Full outbound stack.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Sequences</span>
+        <span class="chip chip-built">Enrollment</span>
+        <span class="chip chip-built">ICP Engine</span>
+        <span class="chip chip-sponsor">Cloudflare</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">Instantly</span>
+        <span class="chip chip-alt">SmartLead</span>
+        <span class="chip chip-alt">Clay</span>
+        <span class="chip chip-alt">Lemlist</span>
+        <span class="chip chip-alt">Reply.io</span>
+      </div>
+    </div>
+
+    <!-- 6: Create Content (left) -->
+    <div class="node node-6">
+      <div class="node-top">
+        <span class="node-name">Create Content</span>
+        <span class="node-source">Markster</span>
+      </div>
+      <div class="node-desc">Multi-platform calendar. LinkedIn, X, Facebook, Blog. Generate, edit, schedule in your brand voice.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Calendar</span>
+        <span class="chip chip-built">Post Editor</span>
+        <span class="chip chip-built">Voice Pack</span>
+        <span class="chip chip-built">4 Platforms</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">Ocoya</span>
+        <span class="chip chip-alt">Buffer</span>
+        <span class="chip chip-alt">Hootsuite</span>
+        <span class="chip chip-alt">Later</span>
+      </div>
+    </div>
+
+    <!-- 7: Prep and Close (top left) -->
+    <div class="node node-7">
+      <div class="node-top">
+        <span class="node-name">Prep and Close</span>
+        <span class="node-source">Markster</span>
+      </div>
+      <div class="node-desc">Executive briefs stitched from all context. Talking points, who to call, what not to say. AI team agents.</div>
+      <div class="node-chips">
+        <span class="chip chip-built">Call Prep</span>
+        <span class="chip chip-built">AI Team</span>
+        <span class="chip chip-built">Onboarding</span>
+        <span class="chip chip-sponsor">WorkOS Auth</span>
+      </div>
+      <div class="replaces-row">
+        <span class="replaces-label">Replaces</span>
+        <span class="chip chip-alt">Gong</span>
+        <span class="chip chip-alt">People.ai</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="cta">The operating system for the one-person company.</div>
+    <div class="credit">Ivan Ivanka + Attila Sukosd / markster.ai</div>
+    <div class="sponsor-row">
+      <span class="sponsor-pill">Anthropic <span class="role">Platform</span></span>
+      <span class="sponsor-pill">OpenAI <span class="role">Platform</span></span>
+      <span class="sponsor-pill">Puzzle <span class="role">Finance</span></span>
+      <span class="sponsor-pill">WorkOS <span class="role">Auth</span></span>
+      <span class="sponsor-pill">Cloudflare <span class="role">Infra</span></span>
+      <span class="sponsor-pill">Manufact <span class="role">Deploy</span></span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

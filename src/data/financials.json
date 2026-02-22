@@ -1,0 +1,20 @@
+{
+  "company_key": "dealpulse-default",
+  "company": "DealPulse Mock SaaS",
+  "available_cash_balance": 420000,
+  "monthly_burn": 24000,
+  "burn_rate_3mo_avg": 23500,
+  "burn_multiple": 1.8,
+  "runway_months": 17.5,
+  "cash_out_date": "2026-10-15",
+  "mrr": 47000,
+  "arr": 564000,
+  "gross_margin_pct": 72,
+  "customers": 14,
+  "avg_deal_size": 48000,
+  "commission_rate_pct": 10,
+  "spotlight_anomalies": [
+    "Q1 infrastructure spend rose 14% versus 3-month average",
+    "Top 2 customers drive 38% of gross revenue"
+  ]
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Validating generated API contracts are in sync."
+
+if [[ -z "${MARKSTER_DOCS_API_KEY:-}" ]]; then
+  if [[ -z "${MARKSTER_OPENAPI_URL:-}" || "${MARKSTER_OPENAPI_URL}" != *"api_key="* ]]; then
+    echo "Skipping OpenAPI contract sync check: MARKSTER_DOCS_API_KEY is not set and MARKSTER_OPENAPI_URL has no api_key query param." >&2
+    echo "Set MARKSTER_DOCS_API_KEY (or MARKSTER_OPENAPI_URL with api_key) in CI secrets to enforce strict OpenAPI sync checks." >&2
+    exit 0
+  fi
+fi
+
+npm run openapi:generate
+
+if ! git diff --quiet -- src/markster/generated-openapi-schemas.ts; then
+  echo "ERROR: generated-openapi-schemas.ts is out of date." >&2
+  echo "Run: npm run openapi:generate" >&2
+  git diff -- src/markster/generated-openapi-schemas.ts | head -n 200
+  exit 1
+fi
+
+echo "OpenAPI contract generation is synchronized."

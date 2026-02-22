@@ -1,0 +1,791 @@
+[
+  {
+    "company_key": "anthropic",
+    "name": "Anthropic",
+    "domain": "anthropic.com",
+    "industry": "Artificial Intelligence",
+    "logo_url": "https://logo.clearbit.com/anthropic.com",
+    "employees": 340,
+    "founded_year": 2021,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$7.0B",
+    "funding_events": [
+      {"round": "Series C", "amount": "$450M", "date": "2023-06", "details": "Scaling enterprise platform and model compute"},
+      {"round": "Series B", "amount": "$500M", "date": "2024-01", "details": "Inference and safety infrastructure"}
+    ],
+    "technology_names": ["Claude", "Model Safety", "Constitutional AI", "MCP"],
+    "website": "https://www.anthropic.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/anthropic/",
+      "twitter": "https://x.com/AnthropicAI",
+      "crunchbase": "https://www.crunchbase.com/organization/anthropic"
+    },
+    "people": [
+      {"id": "p1", "name": "Dario Amodei", "title": "CEO", "email": "dario@anthropic.com", "linkedin": "https://www.linkedin.com/in/dario", "photo_url": "https://ui-avatars.com/api/?name=Dario+Amodei&background=CDCDCD&color=000000&bold=true"},
+      {"id": "p2", "name": "Sarah Chen", "title": "VP Revenue", "email": "sarah.chen@anthropic.com", "linkedin": "https://www.linkedin.com/in/sarah-chen-ai", "photo_url": "/assets/headshots/p2.png"},
+      {"id": "p3", "name": "Marcus Johnson", "title": "Head of Sales", "email": "marcus.j@anthropic.com", "linkedin": "https://www.linkedin.com/in/marcus-johnson-sales", "photo_url": "/assets/headshots/p3.png"}
+    ],
+    "description": "AI startup building safe and steerable language models for real-world use cases."
+  },
+  {
+    "company_key": "openai",
+    "name": "OpenAI",
+    "domain": "openai.com",
+    "industry": "AI Infrastructure",
+    "logo_url": "https://logo.clearbit.com/openai.com",
+    "employees": 1800,
+    "founded_year": 2015,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$80B",
+    "funding_events": [
+      {"round": "Private", "amount": "$200M", "date": "2023-04", "details": "Growth and infra expansion"}
+    ],
+    "technology_names": ["GPT", "DALL-E", "Codex", "Embeddings"],
+    "website": "https://openai.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/openai/",
+      "twitter": "https://x.com/OpenAI",
+      "crunchbase": "https://www.crunchbase.com/organization/openai"
+    },
+    "people": [
+      {"id": "p4", "name": "Sam Altman", "title": "Chief Executive Officer", "email": "sam@openai.com", "linkedin": "https://www.linkedin.com/in/sam-altman", "photo_url": "https://ui-avatars.com/api/?name=Sam+Altman&background=CDCDCD&color=000000&bold=true"},
+      {"id": "p5", "name": "Mina Patel", "title": "Director of Partnerships", "email": "mina@openai.com", "linkedin": "https://www.linkedin.com/in/mina-patel", "photo_url": "/assets/headshots/p5.png"}
+    ],
+    "description": "AI company developing advanced language and multimodal systems for consumers and enterprises."
+  },
+  {
+    "company_key": "stripe",
+    "name": "Stripe",
+    "domain": "stripe.com",
+    "industry": "Fintech",
+    "logo_url": "https://logo.clearbit.com/stripe.com",
+    "employees": 5200,
+    "founded_year": 2009,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$95B",
+    "funding_events": [
+      {"round": "Public", "amount": "Public", "date": "2014-03", "details": "IPO in long-term growth roadmap"}
+    ],
+    "technology_names": ["Payments", "Billing", "Fintech", "Risk", "Fraud"],
+    "website": "https://stripe.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/stripe/",
+      "twitter": "https://x.com/stripe"
+    },
+    "people": [
+      {"id": "p6", "name": "Claire Hughes", "title": "VP Revenue", "email": "claire@stripe.com", "linkedin": "https://www.linkedin.com/in/claire-hughes", "photo_url": "/assets/headshots/p6.png"},
+      {"id": "p7", "name": "Diana Lin", "title": "Head of Enterprise", "email": "diana@stripe.com", "linkedin": "https://www.linkedin.com/in/diana-lin", "photo_url": "/assets/headshots/p7.png"}
+    ],
+    "description": "Payments and business platform for internet commerce and subscriptions."
+  },
+  {
+    "company_key": "notion",
+    "name": "Notion",
+    "domain": "notion.so",
+    "industry": "Productivity",
+    "logo_url": "https://logo.clearbit.com/notion.so",
+    "employees": 700,
+    "founded_year": 2013,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$10B",
+    "funding_events": [
+      {"round": "Series G", "amount": "$450M", "date": "2025-02", "details": "International expansion and AI roadmap"}
+    ],
+    "technology_names": ["Collaborative Docs", "Knowledge Base", "AI Assist", "Automation"],
+    "website": "https://notion.so",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/notion/",
+      "twitter": "https://x.com/NotionHQ"
+    },
+    "people": [
+      {"id": "p8", "name": "Ivan Ivanov", "title": "CRO", "email": "ivan@notion.so", "linkedin": "https://www.linkedin.com/in/ivan-sales", "photo_url": "https://api.dicebear.com/9.x/personas/svg?seed=ivan-ivanov"}
+    ],
+    "description": "All-in-one workspace for docs, projects, and knowledge management."
+  },
+  {
+    "company_key": "ramp",
+    "name": "Ramp",
+    "domain": "ramp.com",
+    "industry": "Fintech",
+    "logo_url": "https://logo.clearbit.com/ramp.com",
+    "employees": 1300,
+    "founded_year": 2019,
+    "city": "New York",
+    "state": "New York",
+    "country": "United States",
+    "valuation": "$8.4B",
+    "funding_events": [
+      {"round": "Series C", "amount": "$300M", "date": "2024-08", "details": "Global spend platform expansion"}
+    ],
+    "technology_names": ["Fintech", "Expense Management", "Corporate Cards", "Spend Analytics"],
+    "website": "https://ramp.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/ramp",
+      "twitter": "https://x.com/ramp"
+    },
+    "people": [
+      {"id": "p9", "name": "Daniel Brooks", "title": "Chief Revenue Officer", "email": "daniel@ramp.com", "linkedin": "https://www.linkedin.com/in/daniel-brooks", "photo_url": "/assets/headshots/p9.png"},
+      {"id": "p10", "name": "Nina K", "title": "Head of Mid-Market", "email": "nina@ramp.com", "linkedin": "https://www.linkedin.com/in/nina-k", "photo_url": "https://api.dicebear.com/9.x/personas/svg?seed=nina-k"}
+    ],
+    "description": "Corporate spending and financial operations platform for modern teams."
+  },
+  {
+    "company_key": "mercury",
+    "name": "Mercury",
+    "domain": "mercury.com",
+    "industry": "Financial Infrastructure",
+    "logo_url": "https://logo.clearbit.com/mercury.com",
+    "employees": 500,
+    "founded_year": 2017,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$1.2B",
+    "funding_events": [
+      {"round": "Series C", "amount": "$255M", "date": "2022-11", "details": "Banking stack scale"}
+    ],
+    "technology_names": ["Banking API", "Treasury", "SMB Banking", "Cards"],
+    "website": "https://mercury.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/mercury",
+      "twitter": "https://x.com/mercury"
+    },
+    "people": [
+      {"id": "p11", "name": "Emily Hart", "title": "VP Sales", "email": "emily.hart@mercury.com", "linkedin": "https://www.linkedin.com/in/emily-hart", "photo_url": "/assets/headshots/p11.png"}
+    ],
+    "description": "Banking platform focused on startup founders and growth teams."
+  },
+  {
+    "company_key": "figma",
+    "name": "Figma",
+    "domain": "figma.com",
+    "industry": "Design Tools",
+    "logo_url": "https://logo.clearbit.com/figma.com",
+    "employees": 2500,
+    "founded_year": 2012,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$20B",
+    "funding_events": [
+      {"round": "Public", "amount": "Public", "date": "2024-06", "details": "Public market transition and scaling enterprise"}
+    ],
+    "technology_names": ["Design", "Collaboration", "Developer Handoff", "Plugins"],
+    "website": "https://figma.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/figma/",
+      "twitter": "https://x.com/figma"
+    },
+    "people": [
+      {"id": "p12", "name": "Sasha Ivanov", "title": "VP Revenue", "email": "sasha@figma.com", "linkedin": "https://www.linkedin.com/in/sasha-ivanov", "photo_url": "/assets/headshots/p12.png"},
+      {"id": "p13", "name": "Reema Batta", "title": "VP Growth Marketing", "email": "reema@figma.com", "linkedin": "https://www.linkedin.com/in/reema-batta/", "photo_url": "/assets/headshots/p13.png"}
+    ],
+    "description": "Real-time collaborative design platform used by product teams worldwide."
+  },
+  {
+    "company_key": "clay",
+    "name": "Clay",
+    "domain": "clay.com",
+    "industry": "Sales Intelligence",
+    "logo_url": "https://logo.clearbit.com/clay.com",
+    "employees": 250,
+    "founded_year": 2023,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$220M",
+    "funding_events": [
+      {"round": "Series A", "amount": "$40M", "date": "2024-09", "details": "Launch partner momentum and growth"}
+    ],
+    "technology_names": ["Workflow Automation", "Sales Outreach", "Data Enrichment", "CRM Sync"],
+    "website": "https://clay.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/clay",
+      "twitter": "https://x.com/clay"
+    },
+    "people": [
+      {"id": "p14", "name": "Maya Chen", "title": "Chief Revenue Officer", "email": "maya@clay.com", "linkedin": "https://www.linkedin.com/in/maya-chen-sales", "photo_url": "/assets/headshots/p14.png"}
+    ],
+    "description": "Sales automation and enrichment platform for outbound teams."
+  },
+  {
+    "company_key": "manufact",
+    "name": "Manufact",
+    "domain": "manufact.com",
+    "industry": "AI Infrastructure",
+    "logo_url": "https://logo.clearbit.com/manufact.com",
+    "employees": 45,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed", "amount": "$6.3M", "date": "2026-02", "details": "YC-backed launch infrastructure for MCP apps and cloud"}
+    ],
+    "technology_names": ["MCP Server Hosting", "Cloud Deploy", "AI App Runtime", "Inspectors"],
+    "website": "https://manufact.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/manufact",
+      "twitter": "https://x.com/manufact"
+    },
+    "people": [
+      {"id": "p15", "name": "Pietro Zullo", "title": "Founder & CEO", "email": "pietro@manufact.com", "linkedin": "https://www.linkedin.com/in/pietro", "twitter": "https://x.com/pietrozullo", "photo_url": "https://ui-avatars.com/api/?name=Pietro+Zullo&background=CDCDCD&color=000000&bold=true"},
+      {"id": "p16", "name": "Luigi Pederzani", "title": "Co-Founder", "email": "luigi@manufact.com", "linkedin": "https://www.linkedin.com/in/luigi-pederzani", "photo_url": "https://ui-avatars.com/api/?name=Luigi+Pederzani&background=CDCDCD&color=000000&bold=true"}
+    ],
+    "description": "Host platform and tools for shipping chat-native MCP applications."
+  },
+  {
+    "company_key": "puzzle",
+    "name": "Puzzle",
+    "domain": "puzzle.io",
+    "industry": "Finance & Accounting",
+    "logo_url": "https://logo.clearbit.com/puzzle.io",
+    "employees": 85,
+    "founded_year": 2020,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$200M",
+    "funding_events": [
+      {"round": "Series B", "amount": "$31M", "date": "2024-06", "details": "Real-time financial platform for startups"},
+      {"round": "Series A", "amount": "$17.5M", "date": "2023-01", "details": "Accounting automation for high-growth startups"}
+    ],
+    "technology_names": ["Real-Time Accounting", "Startup Finance", "AI Bookkeeping", "Financial APIs"],
+    "website": "https://puzzle.io",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/puzzleio/",
+      "twitter": "https://x.com/puzzle_hq"
+    },
+    "people": [
+      {"id": "p17", "name": "Sasha Orloff", "title": "CEO & Co-Founder", "email": "sasha@puzzle.io", "linkedin": "https://www.linkedin.com/in/sashaorloff", "twitter": "https://x.com/saborloff", "photo_url": "https://ui-avatars.com/api/?name=Sasha+Orloff&background=CDCDCD&color=000000&bold=true"},
+      {"id": "p18", "name": "Andy Su", "title": "CTO & Co-Founder", "email": "andy@puzzle.io", "linkedin": "https://www.linkedin.com/in/andysu", "photo_url": "https://ui-avatars.com/api/?name=Andy+Su&background=CDCDCD&color=000000&bold=true"}
+    ],
+    "description": "Real-time accounting and financial intelligence platform built for high-growth startups."
+  },
+  {
+    "company_key": "workos",
+    "name": "WorkOS",
+    "domain": "workos.com",
+    "industry": "Developer Tools",
+    "logo_url": "https://logo.clearbit.com/workos.com",
+    "employees": 120,
+    "founded_year": 2019,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$500M",
+    "funding_events": [
+      {"round": "Series B", "amount": "$80M", "date": "2024-01", "details": "Enterprise auth platform scaling to $30M ARR"}
+    ],
+    "technology_names": ["Enterprise SSO", "SCIM", "Fine-Grained Auth", "Admin Portal", "AuthKit"],
+    "website": "https://workos.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/workos/",
+      "twitter": "https://x.com/WorkOS"
+    },
+    "people": [
+      {"id": "p19", "name": "Michael Grinich", "title": "CEO & Founder", "email": "michael@workos.com", "linkedin": "https://www.linkedin.com/in/grinich", "photo_url": "https://ui-avatars.com/api/?name=Michael+Grinich&background=CDCDCD&color=000000&bold=true"}
+    ],
+    "description": "Enterprise-ready auth and identity platform for B2B SaaS developers."
+  },
+  {
+    "company_key": "cloudflare",
+    "name": "Cloudflare",
+    "domain": "cloudflare.com",
+    "industry": "Web Infrastructure",
+    "logo_url": "https://logo.clearbit.com/cloudflare.com",
+    "employees": 4200,
+    "founded_year": 2009,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$30B+",
+    "funding_events": [
+      {"round": "Public", "amount": "NYSE: NET", "date": "2019-09", "details": "IPO, now $30B+ market cap"}
+    ],
+    "technology_names": ["CDN", "Workers", "Workers AI", "R2", "AI Gateway", "Zero Trust"],
+    "website": "https://cloudflare.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/cloudflare/",
+      "twitter": "https://x.com/cloudflare"
+    },
+    "people": [
+      {"id": "p20", "name": "Matthew Prince", "title": "CEO & Co-Founder", "email": "matthew@cloudflare.com", "linkedin": "https://www.linkedin.com/in/matthewprince"}
+    ],
+    "description": "Global web infrastructure and security platform powering millions of internet properties."
+  },
+  {
+    "company_key": "y-combinator",
+    "name": "Y Combinator",
+    "domain": "ycombinator.com",
+    "industry": "Venture Capital",
+    "logo_url": "https://logo.clearbit.com/ycombinator.com",
+    "employees": 200,
+    "founded_year": 2005,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "N/A",
+    "funding_events": [],
+    "technology_names": ["Startup Accelerator", "Seed Funding", "Batch Program", "Demo Day"],
+    "website": "https://ycombinator.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/y-combinator/",
+      "twitter": "https://x.com/ycombinator"
+    },
+    "people": [
+      {"id": "p21", "name": "Jon Xu", "title": "General Partner, Judge", "email": "jon@ycombinator.com", "linkedin": "https://www.linkedin.com/in/jonxu", "twitter": "https://x.com/xuster", "photo_url": "https://ui-avatars.com/api/?name=Jon+Xu&background=CDCDCD&color=000000&bold=true"},
+      {"id": "p23", "name": "Leah Ulip", "title": "Staff", "email": "leah@ycombinator.com", "linkedin": "https://www.linkedin.com/in/leah-ulip", "photo_url": "https://ui-avatars.com/api/?name=Leah+Ulip&background=CDCDCD&color=000000&bold=true"},
+      {"id": "p24", "name": "Garrett Cason", "title": "Staff", "email": "garrett@ycombinator.com", "linkedin": "https://www.linkedin.com/in/garrett-cason", "photo_url": "https://ui-avatars.com/api/?name=Garrett+Cason&background=CDCDCD&color=000000&bold=true"}
+    ],
+    "description": "Leading startup accelerator backing companies from seed to scale."
+  },
+  {
+    "company_key": "kontext-group",
+    "name": "Kontext Group",
+    "domain": "kontextgroup.com",
+    "industry": "Digital Marketing",
+    "logo_url": "https://logo.clearbit.com/kontextgroup.com",
+    "employees": 35,
+    "founded_year": 2018,
+    "city": "Budapest",
+    "state": null,
+    "country": "Hungary",
+    "valuation": "Private",
+    "funding_events": [],
+    "technology_names": ["Performance Marketing", "SEO", "PPC", "Content Marketing"],
+    "website": "https://kontextgroup.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/kontext-group/"
+    },
+    "people": [
+      {"id": "p22", "name": "Tamas Kovacs", "title": "CEO", "email": "tamas@kontextgroup.com", "linkedin": "https://www.linkedin.com/in/tamas-kovacs"}
+    ],
+    "description": "Performance marketing agency scaling B2B and e-commerce brands across Central Europe."
+  },
+  {
+    "company_key": "orthogonal",
+    "name": "Orthogonal",
+    "domain": "orthogonal.com",
+    "industry": "Developer Tools",
+    "logo_url": "https://logo.clearbit.com/orthogonal.com",
+    "employees": 2,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed (YC W26)", "amount": "$500K", "date": "2026-01", "details": "YC W26 batch — agentic payments for APIs"}
+    ],
+    "technology_names": ["API Payments", "MCP Integration", "SDK", "Pay-as-you-go Billing"],
+    "website": "https://orthogonal.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/orthogonal",
+      "twitter": "https://x.com/orthogonal"
+    },
+    "people": [
+      {"id": "p25", "name": "Christian Pickett", "title": "Co-Founder", "email": "christian@orthogonal.com", "linkedin": "https://www.linkedin.com/in/christian-pickett"},
+      {"id": "p26", "name": "Bera Sogut", "title": "Co-Founder", "email": "bera@orthogonal.com", "linkedin": "https://www.linkedin.com/in/bera-sogut"}
+    ],
+    "description": "Agentic payments for APIs. Developers and AI agents get instant access to hundreds of paid APIs through a unified MCP or SDK — no API key management, pay-as-you-go. Previously: Coinbase payments, Vercel billing, Google reCAPTCHA/Maps."
+  },
+  {
+    "company_key": "sixtyfour",
+    "name": "Sixtyfour",
+    "domain": "sixtyfour.ai",
+    "industry": "Sales Intelligence",
+    "logo_url": "https://logo.clearbit.com/sixtyfour.ai",
+    "employees": 8,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed (YC X25)", "amount": "Undisclosed", "date": "2025-06", "details": "YC X25 batch — Bloomberg Terminal for sales, 20x revenue growth in 2 months"}
+    ],
+    "technology_names": ["AI Research Agents", "TAM Mapping", "Real-Time Signals", "People Intelligence"],
+    "website": "https://sixtyfour.ai",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/sixtyfour",
+      "twitter": "https://x.com/sixtyfour_ai"
+    },
+    "people": [
+      {"id": "p27", "name": "Saarth Shah", "title": "CEO & Co-Founder", "email": "saarth@sixtyfour.ai", "linkedin": "https://www.linkedin.com/in/saarth-shah"},
+      {"id": "p28", "name": "Christopher Price", "title": "COO & Co-Founder", "email": "chris@sixtyfour.ai", "linkedin": "https://www.linkedin.com/in/christopher-price"},
+      {"id": "p29", "name": "Henry Wang", "title": "Software Engineer", "email": "henry@sixtyfour.ai", "linkedin": "https://www.linkedin.com/in/henry-wang"}
+    ],
+    "description": "Bloomberg Terminal for sales. AI research agents that discover, link, and reason over data about people and companies. Custom TAMs, real-time proprietary signals, niche market intelligence where Apollo/ZoomInfo have gaps. Customers include Mercor, Traba, Hockeystack."
+  },
+  {
+    "company_key": "nixo",
+    "name": "Nixo",
+    "domain": "withnixo.com",
+    "industry": "Developer Tools",
+    "logo_url": "https://logo.clearbit.com/withnixo.com",
+    "employees": 4,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed (YC S25)", "amount": "Undisclosed", "date": "2025-09", "details": "YC S25 batch — ops platform for forward-deployed engineers"}
+    ],
+    "technology_names": ["FDE Workflows", "Slack/GitHub/Linear Integration", "Code Reuse Discovery", "Workload Visibility"],
+    "website": "https://withnixo.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/nixo"
+    },
+    "people": [
+      {"id": "p30", "name": "Priya Khandelwal", "title": "CEO & Co-Founder", "email": "priya@withnixo.com", "linkedin": "https://www.linkedin.com/in/priya-khandelwal"},
+      {"id": "p31", "name": "Priti Rangnekar", "title": "CTO & Co-Founder", "email": "priti@withnixo.com", "linkedin": "https://www.linkedin.com/in/priti-rangnekar"},
+      {"id": "p32", "name": "Rini Khandelwal", "title": "Software Engineer", "email": "rini@withnixo.com", "linkedin": "https://www.linkedin.com/in/rini-khandelwal"}
+    ],
+    "description": "First ops platform for forward-deployed engineers. Pulls data from Slack, GitHub, Linear, and CRMs to help FDEs scope problems faster, discover code reuse, and get workload visibility. Stanford CS founding team, ex-Scale AI and Meta."
+  },
+  {
+    "company_key": "twolabs",
+    "name": "Twolabs",
+    "domain": "twolabs.ai",
+    "industry": "AI Data",
+    "logo_url": "https://logo.clearbit.com/twolabs.ai",
+    "employees": 2,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed (YC X26)", "amount": "$500K", "date": "2026-02", "details": "YC X26 batch — training data for agricultural robotics"}
+    ],
+    "technology_names": ["Wearable Cameras", "POV Video Capture", "Data Labeling", "Robotics Training Data"],
+    "website": "https://twolabs.ai",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/twolabs",
+      "twitter": "https://x.com/bysardr"
+    },
+    "people": [
+      {"id": "p33", "name": "Sardor Rahmatulloev", "title": "Co-Founder", "email": "sardor@twolabs.ai", "linkedin": "https://www.linkedin.com/in/sardor-rahmatulloev"}
+    ],
+    "description": "Training data for agricultural robotics. Wearable cameras on farm workers capture first-person POV of real labor tasks, labeled and sold to robotics companies. First Uzbek founder accepted into YC. Cornell alum, previously at Meta Superintelligence."
+  },
+  {
+    "company_key": "rubric-ai",
+    "name": "Rubric AI",
+    "domain": "rubric.com",
+    "industry": "AI Evaluation",
+    "logo_url": "https://logo.clearbit.com/rubric.com",
+    "employees": 2,
+    "founded_year": 2025,
+    "city": "New York",
+    "state": "New York",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed (YC W26)", "amount": "$500K", "date": "2026-01", "details": "YC W26 batch — AI evaluation platform"}
+    ],
+    "technology_names": ["AI Evaluation", "LLM Testing", "Model Benchmarking"],
+    "website": "https://rubric.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/rubric-ai"
+    },
+    "people": [
+      {"id": "p34", "name": "Pragya Saboo", "title": "Co-Founder", "email": "pragya@rubric.com", "linkedin": "https://www.linkedin.com/in/pragyasaboo"},
+      {"id": "p35", "name": "Spandana Govindgari", "title": "Co-Founder", "email": "spandana@rubric.com", "linkedin": "https://www.linkedin.com/in/sgovindgari"}
+    ],
+    "description": "AI evaluation platform. Co-founders: Pragya (Georgia Tech, ex-Asana product, Climate Capital, Oscar Health) and Spandana (Cornell CS, Staff Engineering Lead at Meta Payments — Instagram/WhatsApp/FB Shops billions in TPV, founding female engineer on Snapchat Payments, founded Hype AR — TechCrunch/Forbes featured)."
+  },
+  {
+    "company_key": "interf",
+    "name": "Interf",
+    "domain": "interf.com",
+    "industry": "Operations Intelligence",
+    "logo_url": "https://logo.clearbit.com/interf.com",
+    "employees": 5,
+    "founded_year": 2024,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "Pre-Seed",
+    "funding_events": [],
+    "technology_names": ["GenAI Analytics", "Operations Intelligence", "Unstructured Data", "Agent Self-Onboarding"],
+    "website": "https://interf.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/in/ged-ossman",
+      "twitter": "https://x.com/GedOssman"
+    },
+    "people": [
+      {"id": "p36", "name": "Ged Ossman", "title": "Founder & CEO", "email": "ged@interf.com", "linkedin": "https://www.linkedin.com/in/ged-ossman"}
+    ],
+    "description": "Operations intelligence platform using GenAI to extract insights from unstructured data, uncover operational inefficiencies and bottlenecks. Piloted with Crunchbase and Copper.co. Founder is ex-founding engineer at Copper.co (through Series C), Forbes Technology Council member. Building agent deployment simulator for F500."
+  },
+  {
+    "company_key": "runlog-atlas",
+    "name": "RunLog Atlas",
+    "domain": "runlogai.com",
+    "industry": "AI Observability",
+    "logo_url": "https://logo.clearbit.com/runlogai.com",
+    "employees": 3,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "Pre-Seed",
+    "funding_events": [],
+    "technology_names": ["AI Observability", "Document Intelligence", "Human-in-the-Loop", "Production AI Monitoring"],
+    "website": "https://runlogai.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/in/vatsal-trivedi"
+    },
+    "people": [
+      {"id": "p37", "name": "Vatsal Trivedi", "title": "Founder", "email": "vatsal@runlogai.com", "linkedin": "https://www.linkedin.com/in/vatsal-trivedi"}
+    ],
+    "description": "Production AI observability. Makes review scale with ambiguity, not volume. Founder: Head of AI at Dirac (1M+ geometries, 70% latency reduction), ML at Meta (50M+ users, hate/language detection), SWE at Microsoft (Windows 11 Store), CTO at Stax. Georgia Tech. 'The bottleneck isn't extraction — it's review, trust, and making human judgment reusable.'"
+  },
+  {
+    "company_key": "reasonos",
+    "name": "ReasonOS",
+    "domain": "reasonos.com",
+    "industry": "AI Infrastructure",
+    "logo_url": "https://logo.clearbit.com/reasonos.com",
+    "employees": 3,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "Pre-Seed",
+    "funding_events": [],
+    "technology_names": ["Reasoning Orchestration", "AI Operating System", "CI/CD Consolidation", "GenAI Language Intelligence"],
+    "website": "https://reasonos.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/in/chrisrleggett"
+    },
+    "people": [
+      {"id": "p38", "name": "Chris Leggett", "title": "Founding AI/ML Engineer & CTO", "email": "chris@reasonos.com", "linkedin": "https://www.linkedin.com/in/chrisrleggett"}
+    ],
+    "description": "Distributed OS to run a software business — consolidates monitoring, CI/CD, security, and scaling into one AI operating system. Also: reasoning orchestration layer governing how thinking happens before language is generated. Founder: Gen AI & language intelligence, ex-Meta, ex-Scale AI."
+  },
+  {
+    "company_key": "zolvo",
+    "name": "Zolvo",
+    "domain": "zolvo.ai",
+    "industry": "AI / Voice Technology",
+    "logo_url": "https://logo.clearbit.com/zolvo.ai",
+    "employees": 2,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "YC Seed",
+    "funding_events": [
+      {"round": "Seed (YC X26)", "amount": "$500K", "date": "2026-02", "details": "YC X26 batch"}
+    ],
+    "technology_names": ["Voice AI", "NLP", "GenAI", "Customer Calls"],
+    "website": "https://zolvo.ai",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/zolvo"
+    },
+    "people": [
+      {"id": "p39", "name": "Isabela Rodriguez", "title": "Co-Founder", "email": "isabela@zolvo.ai", "linkedin": "https://www.linkedin.com/in/isabela-rodriguez-438785170"},
+      {"id": "p40", "name": "Tony Montes", "title": "Co-Founder & AI Lead", "email": "tony@zolvo.ai", "linkedin": "https://www.linkedin.com/in/t-montes"}
+    ],
+    "description": "YC X26 company. Co-founders: Isabela Rodriguez (University of the Andes, Endeavor network, sales leadership) and Tony Montes (NLP/GenAI specialist, Founding AI Engineer at Domu YC S24 — built production voice-AI for end-to-end customer calls)."
+  },
+  {
+    "company_key": "tilt",
+    "name": "Tilt",
+    "domain": "tilt.vote",
+    "industry": "Prediction Markets",
+    "logo_url": "https://logo.clearbit.com/tilt.vote",
+    "employees": 3,
+    "founded_year": 2025,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "Pre-Seed",
+    "funding_events": [],
+    "technology_names": ["Logic Markets", "Prediction Markets", "MCP", "API-First"],
+    "website": "https://tilt.vote",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/in/vir-sanghavi"
+    },
+    "people": [
+      {"id": "p41", "name": "Vir Sanghavi", "title": "CTO", "email": "vir@tilt.vote", "linkedin": "https://www.linkedin.com/in/vir-sanghavi"}
+    ],
+    "description": "Logic markets and prediction platforms. CTO Vir Sanghavi won 3rd place at YC Agent Jam '25 (youngest team, 10% acceptance rate), NASA Space Apps Challenge #1. Platform design, coordinated intelligence, incentive design. National Finalist in Congressional Debate (NSDA 2023, 2024)."
+  },
+  {
+    "company_key": "mercor",
+    "name": "Mercor",
+    "domain": "mercor.com",
+    "industry": "AI Recruiting",
+    "logo_url": "https://logo.clearbit.com/mercor.com",
+    "employees": 100,
+    "founded_year": 2023,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$10B",
+    "funding_events": [
+      {"round": "Series C", "amount": "$350M", "date": "2025-10", "details": "$10B valuation, AI expert matching at scale"},
+      {"round": "Series B", "amount": "$100M", "date": "2025-02", "details": "$2B valuation, AI talent for model training"}
+    ],
+    "technology_names": ["AI Recruiting", "Expert Matching", "Model Training Data", "Talent Marketplace"],
+    "website": "https://mercor.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/mercor",
+      "twitter": "https://x.com/mercaborhq"
+    },
+    "people": [
+      {"id": "p42", "name": "Brendan Foody", "title": "Co-Founder & CEO", "email": "brendan@mercor.com", "linkedin": "https://www.linkedin.com/in/brendan-foody-2995ab10b"},
+      {"id": "p43", "name": "Adarsh Hiremath", "title": "Co-Founder & CTO", "email": "adarsh@mercor.com", "linkedin": "https://www.linkedin.com/in/adarsh-hiremath"}
+    ],
+    "description": "AI-powered expert matching for model training. Connects domain experts (engineers, lawyers, doctors) with companies training AI models. Serves OpenAI and Anthropic. YC W23 batch, 21-year-old founders, $10B valuation. Customer of Sixtyfour."
+  },
+  {
+    "company_key": "retool",
+    "name": "Retool",
+    "domain": "retool.com",
+    "industry": "Developer Tools",
+    "logo_url": "https://logo.clearbit.com/retool.com",
+    "employees": 300,
+    "founded_year": 2017,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$3.2B",
+    "funding_events": [
+      {"round": "Series C", "amount": "$45M", "date": "2021-08", "details": "$3.2B valuation, internal tools platform at scale"}
+    ],
+    "technology_names": ["Low-Code", "Internal Tools", "Admin Panels", "Workflow Automation"],
+    "website": "https://retool.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/retool",
+      "twitter": "https://x.com/retaborol"
+    },
+    "people": [
+      {"id": "p44", "name": "David Hsu", "title": "Founder & CEO", "email": "david@retool.com", "linkedin": "https://www.linkedin.com/in/dvdhsu"}
+    ],
+    "description": "Build custom internal tools fast. Drag-and-drop UI builder for dashboards, admin panels, and business apps. 500K+ apps on platform. YC W17."
+  },
+  {
+    "company_key": "brex",
+    "name": "Brex",
+    "domain": "brex.com",
+    "industry": "Fintech",
+    "logo_url": "https://logo.clearbit.com/brex.com",
+    "employees": 1000,
+    "founded_year": 2017,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$5.15B (acquired)",
+    "funding_events": [
+      {"round": "Acquisition", "amount": "$5.15B", "date": "2026-01", "details": "Acquired by Capital One"},
+      {"round": "Series D", "amount": "$300M", "date": "2022-01", "details": "$12.3B valuation pre-acquisition"}
+    ],
+    "technology_names": ["Corporate Cards", "Spend Management", "Payroll", "Banking"],
+    "website": "https://brex.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/brex",
+      "twitter": "https://x.com/braborex"
+    },
+    "people": [
+      {"id": "p45", "name": "Pedro Franceschi", "title": "Co-Founder & CEO", "email": "pedro@brex.com", "linkedin": "https://www.linkedin.com/in/pfranceschi"},
+      {"id": "p46", "name": "Henrique Dubugras", "title": "Co-Founder & Chairman", "email": "henrique@brex.com", "linkedin": "https://www.linkedin.com/in/henriquedubugras"}
+    ],
+    "description": "Corporate cards and spend management for startups. First modern fintech card without manual paperwork. Acquired by Capital One for $5.15B (Jan 2026). YC W17 — one of YC's biggest outcomes."
+  },
+  {
+    "company_key": "vercel",
+    "name": "Vercel",
+    "domain": "vercel.com",
+    "industry": "Developer Tools",
+    "logo_url": "https://logo.clearbit.com/vercel.com",
+    "employees": 200,
+    "founded_year": 2015,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$9.3B",
+    "funding_events": [
+      {"round": "Series F", "amount": "$300M", "date": "2025-09", "details": "$9.3B valuation, 32M active domains, 140B weekly requests"}
+    ],
+    "technology_names": ["Next.js", "Serverless", "Edge Functions", "Fluid Compute", "Frontend Cloud"],
+    "website": "https://vercel.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/vercel",
+      "twitter": "https://x.com/vercel"
+    },
+    "people": [
+      {"id": "p47", "name": "Guillermo Rauch", "title": "Founder & CEO", "email": "rauchg@vercel.com", "linkedin": "https://www.linkedin.com/in/rauchg"}
+    ],
+    "description": "Frontend cloud platform. Created and maintains Next.js. Deploy and manage web apps at scale. 32M active domains, 140B weekly requests. Connected to hackathon via Orthogonal founder (ex-Vercel billing)."
+  },
+  {
+    "company_key": "scale-ai",
+    "name": "Scale AI",
+    "domain": "scale.com",
+    "industry": "AI Data Infrastructure",
+    "logo_url": "https://logo.clearbit.com/scale.com",
+    "employees": 5800,
+    "founded_year": 2016,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$29B+",
+    "funding_events": [
+      {"round": "Strategic", "amount": "$14.3B", "date": "2025-06", "details": "Meta investment at $29B+ valuation"},
+      {"round": "Series E", "amount": "$325M", "date": "2021-04", "details": "$7.3B valuation, enterprise AI data"}
+    ],
+    "technology_names": ["Data Labeling", "RLHF", "AI Training Data", "Model Evaluation", "Government AI"],
+    "website": "https://scale.com",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/scale-ai",
+      "twitter": "https://x.com/scale_AI"
+    },
+    "people": [
+      {"id": "p48", "name": "Alexandr Wang", "title": "Founder", "email": "alex@scale.com", "linkedin": "https://www.linkedin.com/in/alexandrwang"}
+    ],
+    "description": "AI data infrastructure. Provides labeled training data, RLHF, and human-in-the-loop for LLMs. 100K+ global contractors. $29B+ valuation. YC S16. Connected to hackathon via Chris Leggett (ReasonOS founder, ex-Scale AI)."
+  },
+  {
+    "company_key": "cognition",
+    "name": "Cognition Labs",
+    "domain": "cognition.ai",
+    "industry": "AI Software Engineering",
+    "logo_url": "https://logo.clearbit.com/cognition.ai",
+    "employees": 40,
+    "founded_year": 2023,
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "valuation": "$10.2B",
+    "funding_events": [
+      {"round": "Series B+", "amount": "$400M", "date": "2025-09", "details": "$10.2B valuation, autonomous AI software engineer"},
+      {"round": "Series A", "amount": "$175M", "date": "2024-04", "details": "Extension round after Devin launch"}
+    ],
+    "technology_names": ["Devin", "Autonomous Coding", "AI Software Engineer", "Code Generation"],
+    "website": "https://cognition.ai",
+    "social_profiles": {
+      "linkedin": "https://www.linkedin.com/company/cognition-ai",
+      "twitter": "https://x.com/cognition_labs"
+    },
+    "people": [
+      {"id": "p49", "name": "Scott Wu", "title": "Co-Founder & CEO", "email": "scott@cognition.ai", "linkedin": "https://www.linkedin.com/in/scott-wu-8b94ab96"},
+      {"id": "p50", "name": "Steven Hao", "title": "Co-Founder & CTO", "email": "steven@cognition.ai", "linkedin": "https://www.linkedin.com/in/steven-hao"}
+    ],
+    "description": "Builders of Devin — the first autonomous AI software engineer. Can code, debug, deploy, and problem-solve end-to-end. $10.2B valuation. Both founders are IOI gold medalists."
+  }
+]

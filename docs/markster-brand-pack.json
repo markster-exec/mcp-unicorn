@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "name": "Markster",
+    "url": "https://markster.ai/",
+    "source": "Derived from markster.ai page content and theme CSS assets",
+    "generated_for": "MCP UI and assistant-facing surfaces tied to Markster Business OS",
+    "updated_at_utc": "2026-02-20"
+  },
+  "identity": {
+    "brand_name": "Markster",
+    "category": "Revenue systems / AI growth operations for service businesses",
+    "positioning": [
+      "Operator-first growth system",
+      "Owner-approved execution",
+      "Predictable pipeline and recurring revenue discipline"
+    ],
+    "mission_tone": "practical, direct, owner-centric, execution focused"
+  },
+  "voice_and_copy": {
+    "principles": [
+      "Direct and unflinching about the problem",
+      "Claims backed by proof examples and outcomes",
+      "Founder-level credibility, no hype language",
+      "Short decision-framed messaging with clear next step",
+      "Confidence without overpromising; includes risk-reduction language"
+    ],
+    "dos": [
+      "Use concise, operator-style language",
+      "Lead with measurable business outcomes",
+      "Use active voice and clear imperatives",
+      "Keep approvals and accountability visible in flow"
+    ],
+    "donts": [
+      "Avoid jargon-heavy abstract marketing fluff",
+      "Avoid ambiguous promises with no proof",
+      "Avoid over-styled copy detached from execution value"
+    ],
+    "voice": {
+      "archetype": "operator",
+      "formality": "confident-professional",
+      "energy": "calm-but-urgent",
+      "personality": [
+        "direct",
+        "transparent",
+        "owner-respecting"
+      ]
+    },
+    "preferred_terms": [
+      "growth system",
+      "playbooks",
+      "qualified conversations",
+      "response time",
+      "owner approval",
+      "results"
+    ]
+  },
+  "visual_system": {
+    "color": {
+      "primary": {
+        "brand_blue": "#00a84c",
+        "ink": "#01ff00",
+        "ink_light": "#cdcdcd"
+      },
+      "neutral": {
+        "n100": "#ffffff",
+        "n200": "#faf8f6",
+        "n300": "#f5f2ed",
+        "n400": "#cdcdcd",
+        "n500": "#9f9f9f",
+        "n600": "#4f4f4f",
+        "n700": "#000000"
+      },
+      "support": {
+        "green": "#01ff00",
+        "green_light": "#e9ffe8",
+        "error": "#dc3545",
+        "warning": "#c8a200",
+        "success": "#00a84c",
+        "red_accent": "#f4263e"
+      },
+      "text": {
+        "body": "#000000",
+        "heading": "#000000",
+        "muted": "#4f4f4f",
+        "inverse": "#ffffff"
+      },
+      "surface": {
+        "page": "#faf8f6",
+        "subtle_section": "#faf8f6",
+        "highlight": "#e9ffe8",
+        "card": "#ffffff"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Plus Jakarta Display, sans-serif",
+        "body": "Plus Jakarta Display, sans-serif",
+        "fallback": "system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+      },
+      "scale": {
+        "base": "16px",
+        "line_height_body": "27px",
+        "line_height_body_mobile": "26px",
+        "h1": {
+          "desktop": "48px / 62px",
+          "mobile": "36px / 44px"
+        },
+        "h2": {
+          "desktop": "38px / 48px",
+          "mobile": "30px / 40px"
+        },
+        "h3": {
+          "desktop": "24px / 34px",
+          "mobile": "24px / 31px"
+        },
+        "h4": {
+          "desktop": "22px / 28px",
+          "mobile": "22px / 28px"
+        },
+        "h5": "18px / 24px",
+        "h6": "16px / 22px",
+        "body_copy": "16px",
+        "small_copy": "14px",
+        "button_copy": "14-16px"
+      },
+      "weights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "tracking": {
+        "body": "0.5px",
+        "body_mobile": "0",
+        "heading": "-0.1px"
+      }
+    },
+    "spacing_and_shape": {
+      "gutter": {
+        "default_horizontal": "20px",
+        "section_desktop_padding": "80px 20px",
+        "section_mobile_padding": "56px 40px 72px",
+        "section_mobile_min": "0 40px 40px"
+      },
+      "radius": {
+        "button": "12px",
+        "card": "36px",
+        "input": "10px",
+        "pill": "50px"
+      },
+      "shadows": [
+        "0 3px 10px rgba(31,37,89,.04)",
+        "0 8px 18px rgba(31,37,89,.05)",
+        "0 16px 51px rgba(28,26,74,.04)",
+        "button hover: drop-shadow(0 2px 6px rgba(31,37,89,.16))"
+      ]
+    },
+    "interaction_states": {
+      "transitions": {
+        "default": "0.2s ease-in-out",
+        "hover_scale_cards": "transform: scale(1.03)",
+        "hover_scale_buttons": "transform: scale(1.05)"
+      },
+      "link_hover": "primary_blue (#0a4a7d)",
+      "focus_style": "focus-visible with clear contrast and no aggressive glow"
+    }
+  },
+  "components": {
+    "button_primary_dark": {
+      "background": "#0a4a7d",
+      "text": "#ffffff",
+      "radius": "12px",
+      "padding": "20px 28px",
+      "shadow": "0 2px 6px rgba(31,37,89,.16)",
+      "hover": {
+        "background": "#0600ff",
+        "text": "#ffffff",
+        "scale": 1.05
+      }
+    },
+    "button_primary_white": {
+      "background": "#ffffff",
+      "text": "#0a4a7d",
+      "border": "1px solid #bdbfd1",
+      "radius": "12px",
+      "padding": "20px 28px",
+      "hover": {
+        "background": "#0a4a7d",
+        "text": "#ffffff",
+        "border": "#0a4a7d",
+        "scale": 1.05
+      }
+    },
+    "button_secondary": {
+      "dark": {
+        "background": "#1f2559",
+        "text": "#ffffff",
+        "border": "1px solid #ffffff"
+      },
+      "light": {
+        "background": "#ffffff",
+        "text": "#1f2559",
+        "border": "1px solid #bdbfd1"
+      }
+    },
+    "card": {
+      "background": "#ffffff",
+      "border": "1px solid #f4f4f9",
+      "radius": "36px",
+      "shadow": "0 3px 10px rgba(31,37,89,.04)"
+    },
+    "form_field": {
+      "height": "62px",
+      "border": "1px solid #e7e8f1",
+      "radius": "10px",
+      "focus_border": "2px solid #0a4a7d",
+      "text": "#1f2559",
+      "placeholder": "#bdbfd1"
+    }
+  },
+  "iconography_and_media": {
+    "style": "minimal vector + dashboard-like data visuals",
+    "imagery_direction": [
+      "owner stories / proof",
+      "pipeline dashboards",
+      "process cards",
+      "clean business context over abstract art"
+    ],
+    "motion": {
+      "approach": "subtle, intentional, non-distracting",
+      "use": [
+        "hover lift on cards",
+        "soft shadows",
+        "AOS-style progressive content reveal"
+      ]
+    }
+  },
+  "accessibility": {
+    "contrast_goal": "WCAG 2.0 AA intent",
+    "text_size": {
+      "base": "16px",
+      "responsive": "clear scaling in mobile breakpoints"
+    },
+    "contrast_checks": [
+      "Blue-on-text pairings used for links/buttons and headings",
+      "muted neutral body text kept readable over white backgrounds"
+    ]
+  },
+  "content_rules": {
+    "headline_pattern": [
+      "Pain + consequence",
+      "What they get + proof",
+      "Direct offer with low friction next step"
+    ],
+    "cta_pattern": [
+      "imperative action verbs",
+      "clear ownership",
+      "low-friction trial framing (14-day, start/test tour language)",
+      "risk reduction statements"
+    ],
+    "forbids": [
+      "buzzword-only storytelling",
+      "unbounded guarantees",
+      "dark, heavy emotional pressure"
+    ]
+  },
+  "platform_guidance": {
+    "theme": "web-first, service-B2B growth systems",
+    "ui_density": "moderate; breathable spacing and strong section hierarchy",
+    "primary_layout_pattern": [
+      "hero statement",
+      "pain/diagnosis section",
+      "proof blocks",
+      "step by step onboarding",
+      "social proof",
+      "direct CTA footer"
+    ],
+    "responsive_breakpoints_observed": [
+      "≤857px",
+      "≤767px",
+      "1000px (header/mobile swap handling)"
+    ],
+    "copy_length": "short paragraphs, high-signal numerics (K, %, time, $, ROI)"
+  },
+  "sources": [
+    "https://markster.ai/",
+    "https://markster.ai/accessibility",
+    "https://markster.ai/hubfs/hub_generated/template_assets/1/240330832060/1768441463827/template_main.min.css",
+    "https://markster.ai/hubfs/hub_generated/template_assets/1/240330832064/1768441455482/template_theme-overrides.min.css"
+  ]
+}

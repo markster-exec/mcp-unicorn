@@ -1,0 +1,149 @@
+[
+  {
+    "person_id": "p1",
+    "name": "Dario Amodei",
+    "title": "CEO",
+    "company_key": "anthropic",
+    "intent_score": 91,
+    "status": "Ready to Buy",
+    "signals": [
+      {
+        "type": "pricing_page_visit",
+        "count": 5,
+        "last": "2026-02-19",
+        "weight": 20
+      },
+      {
+        "type": "quote_viewed",
+        "count": 3,
+        "last": "2026-02-20",
+        "weight": 30
+      },
+      {
+        "type": "case_study_download",
+        "count": 2,
+        "last": "2026-02-18",
+        "weight": 15
+      },
+      {
+        "type": "email_opened",
+        "count": 4,
+        "last": "2026-02-20",
+        "weight": 10
+      }
+    ]
+  },
+  {
+    "person_id": "p13",
+    "name": "Reema Batta",
+    "title": "VP Growth Marketing",
+    "company_key": "figma",
+    "intent_score": 87,
+    "status": "Ready to Buy",
+    "signals": [
+      {
+        "type": "pricing_page_visit",
+        "count": 6,
+        "last": "2026-02-21",
+        "weight": 20
+      },
+      {
+        "type": "roi_calculator",
+        "count": 2,
+        "last": "2026-02-20",
+        "weight": 25
+      },
+      {
+        "type": "case_study_download",
+        "count": 3,
+        "last": "2026-02-21",
+        "weight": 15
+      },
+      {
+        "type": "email_opened",
+        "count": 5,
+        "last": "2026-02-21",
+        "weight": 10
+      }
+    ],
+    "recent_posts": [
+      {
+        "platform": "linkedin",
+        "date": "2025-10-30",
+        "text": "Excited to share that Figma has acquired Weavy! Weavy — soon to be Figma Weave — brings AI and powerful editing tools together on a single canvas where creatives of all kinds can push the limits of their craft.",
+        "url": "https://www.linkedin.com/posts/reema-batta_introducing-figma-weave-the-next-generation-activity-7389677378219855872-KPul",
+        "engagement": "45 likes"
+      },
+      {
+        "platform": "linkedin",
+        "date": "2025-05-08",
+        "text": "The future doesn't wait and neither do we. At Figma, we build fast and with intention, but never compromising on quality. Dylan Field and Garry Tan explore how the evolving tech landscape is accelerating innovation.",
+        "url": "https://www.linkedin.com/posts/reema-batta_config2025-activity-7326330615539077121-luWk",
+        "engagement": "116 likes"
+      },
+      {
+        "platform": "linkedin",
+        "date": "2025-03-19",
+        "text": "Big news — Figma Slides is now available to EVERYONE! Marketers, PMs, sales teams, finance folks — this one's for you. No more wrestling with clunky decks.",
+        "url": "https://www.linkedin.com/posts/reema-batta_big-newsfigma-slides-is-now-available-activity-7308238242439405569-Fxu9",
+        "engagement": "219 likes"
+      }
+    ]
+  },
+  {
+    "person_id": "p9",
+    "name": "Daniel Brooks",
+    "title": "Chief Revenue Officer",
+    "company_key": "ramp",
+    "intent_score": 38,
+    "status": "Warming",
+    "signals": [
+      {
+        "type": "blog_read",
+        "count": 3,
+        "last": "2026-02-17",
+        "weight": 5
+      },
+      {
+        "type": "email_opened",
+        "count": 2,
+        "last": "2026-02-16",
+        "weight": 10
+      }
+    ]
+  },
+  {
+    "person_id": "p8",
+    "name": "Sasha Ivanov",
+    "title": "VP Revenue",
+    "company_key": "notion",
+    "intent_score": 64,
+    "status": "Hot",
+    "signals": [
+      {
+        "type": "pricing_page_visit",
+        "count": 2,
+        "last": "2026-02-19",
+        "weight": 20
+      },
+      {
+        "type": "case_study_download",
+        "count": 1,
+        "last": "2026-02-18",
+        "weight": 15
+      },
+      {
+        "type": "email_opened",
+        "count": 6,
+        "last": "2026-02-20",
+        "weight": 10
+      },
+      {
+        "type": "call_keyword",
+        "count": 1,
+        "last": "2026-02-17",
+        "weight": 15
+      }
+    ]
+  }
+]

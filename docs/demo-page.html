@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Entire Business. One Conversation. | YC MCP Apps Hackathon</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --green: #01ff00;
+    --green-dim: rgba(1,255,0,0.15);
+    --green-faint: rgba(1,255,0,0.06);
+    --bg: #0a0f0a;
+    --card: #0f1a0f;
+    --border: #1a2e1a;
+    --text: #e0ffe0;
+    --text-muted: #889988;
+    --text-dim: #556655;
+    --bad: #ff4444;
+    --radius: 12px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* === HERO === */
+  .hero {
+    padding: 100px 0 80px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+  }
+
+  .hero-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: var(--green-faint);
+    border: 1px solid rgba(1,255,0,0.15);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--green), #00cc44, var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero .subtitle {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    max-width: 640px;
+    margin: 0 auto 32px;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--green);
+  }
+
+  .hero-stat-label {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* === SECTIONS === */
+  section {
+    padding: 80px 0;
+    position: relative;
+  }
+
+  section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+  }
+
+  section:last-child::after { display: none; }
+
+  .section-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+
+  .section-body {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 720px;
+  }
+
+  .section-body strong { color: var(--text); font-weight: 600; }
+
+  /* === PROBLEM === */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 700px) {
+    .problem-grid { grid-template-columns: 1fr; }
+  }
+
+  .problem-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+  }
+
+  .problem-card .num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--bad);
+    margin-bottom: 4px;
+  }
+
+  .problem-card .label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .problem-card .detail {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+  }
+
+  /* === DEMO FLOW === */
+  .flow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  .flow-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    transition: border-color 0.2s;
+  }
+
+  .flow-step:hover { border-color: rgba(1,255,0,0.2); }
+
+  .flow-num {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--green-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--green);
+    flex-shrink: 0;
+  }
+
+  .flow-content h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .flow-content .prompt {
+    font-size: 0.8rem;
+    color: var(--green);
+    font-family: 'SF Mono', monospace;
+    margin-bottom: 4px;
+  }
+
+  .flow-content .result {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  /* === DOMAINS GRID === */
+  .domains-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 700px) {
+    .domains-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .domain-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+
+  .domain-card h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .domain-card .source {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+  }
+
+  .domain-card .desc {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .domain-card .replaces {
+    font-size: 0.6rem;
+    color: #445544;
+  }
+
+  .domain-card .replaces span {
+    color: var(--text-dim);
+  }
+
+  /* === SPONSORS === */
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 700px) {
+    .sponsors { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .sponsor-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    text-align: center;
+  }
+
+  .sponsor-card .name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .sponsor-card .role {
+    font-size: 0.65rem;
+    color: var(--green);
+    margin-bottom: 6px;
+  }
+
+  .sponsor-card .how {
+    font-size: 0.6rem;
+    color: var(--text-dim);
+  }
+
+  /* === CTA === */
+  .cta-section {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+  }
+
+  .cta-section .os-line {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .cta-section .credit {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-top: 16px;
+  }
+
+  .cta-section .link {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--bg);
+    background: var(--green);
+    padding: 10px 28px;
+    border-radius: 8px;
+    transition: opacity 0.2s;
+  }
+
+  .cta-section .link:hover {
+    opacity: 0.85;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-badge">YC MCP Apps Hackathon / Feb 21, 2026</div>
+    <h1>Your Entire Business.<br>One Conversation.</h1>
+    <p class="subtitle">32 production MCP tools across 8 business domains. Bidirectional interactive UI. Works on Claude and ChatGPT. Not a prototype. 2 years of production infrastructure.</p>
+    <div class="hero-stats">
+      <div><div class="hero-stat-value">32</div><div class="hero-stat-label">MCP Tools</div></div>
+      <div><div class="hero-stat-value">12</div><div class="hero-stat-label">Interactive Scenes</div></div>
+      <div><div class="hero-stat-value">8</div><div class="hero-stat-label">Business Domains</div></div>
+      <div><div class="hero-stat-value">6/6</div><div class="hero-stat-label">Sponsors Used</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section>
+  <div class="container">
+    <div class="section-badge">The Problem</div>
+    <h2 class="section-title">AI workspaces have zero business context.</h2>
+    <p class="section-body">800M people use ChatGPT weekly. Claude is where developers live. Both are betting AI becomes where people work. But when a founder opens their AI, there is nothing there. No pipeline. No customers. No revenue data. <strong>The most powerful AI in the world, and zero business context.</strong></p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="num">$1T+</div>
+        <div class="label">SaaS market cap wiped</div>
+        <div class="detail">HubSpot -70%. ZoomInfo -49%. 5 CEO departures in 2025.</div>
+      </div>
+      <div class="problem-card">
+        <div class="num">8-12</div>
+        <div class="label">Disconnected tools per founder</div>
+        <div class="detail">CRM, outreach, content, finance, enrichment, signals, email infra, task management. None talk to each other.</div>
+      </div>
+      <div class="problem-card">
+        <div class="num">50-80%</div>
+        <div class="label">Discounts are unnecessary</div>
+        <div class="detail">No tool connects "should I discount?" to "what happens to my runway?" (Professional Pricing Society)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section>
+  <div class="container">
+    <div class="section-badge">What We Built</div>
+    <h2 class="section-title">The business layer for AI.</h2>
+    <p class="section-body">32 MCP tools that turn your AI conversation into a business operating system. Interactive, bidirectional UI: the slider talks back to the server, charts update in real time, every scene links to every other scene. This is not a hackathon project. <strong>This is 2 years of production infrastructure exposed through MCP.</strong></p>
+  </div>
+</section>
+
+<!-- DEMO FLOW -->
+<section>
+  <div class="container">
+    <div class="section-badge">Live Demo Flow</div>
+    <h2 class="section-title">7 prompts. 90 seconds. Zero dashboards.</h2>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-content">
+          <h4>See My Business</h4>
+          <div class="prompt">"How's my business doing this morning?"</div>
+          <div class="result">$15.6K MRR, 82% margins, 41 customers, KPI cards, notifications, tasks.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-content">
+          <h4>Research Anything</h4>
+          <div class="prompt">"Tell me about Figma"</div>
+          <div class="result">Live company profile via Apollo API. Key stats, contacts. Pricing auto-syncs to the $150K deal.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-content">
+          <h4>Spot Buyers</h4>
+          <div class="prompt">"What signals do we have on Figma?"</div>
+          <div class="result">Reema Batta (VP Growth, intent 87, Ready to Buy). 6 pricing page visits, ROI calculator, demo request.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-content">
+          <h4>Price and Model Deals</h4>
+          <div class="prompt">"What if I offer 20% discount to close faster?"</div>
+          <div class="result">Interactive slider. Drag to 10% = TAKE THE DEAL. Drag to 35% = DON'T DISCOUNT. Live charts, EV curves.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">5</div>
+        <div class="flow-content">
+          <h4>Deal Impact</h4>
+          <div class="prompt">"Show me the deal impact"</div>
+          <div class="result">Financial Impact for Figma. What $150K means for MRR, margin, runway. Contextual framing for Reema Batta.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">6</div>
+        <div class="flow-content">
+          <h4>Prep and Close</h4>
+          <div class="prompt">"Prep me for the call"</div>
+          <div class="result">Executive brief. Talking points from real signals. Do-not-do list. Reema as warmest contact. Everything stitched.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">7</div>
+        <div class="flow-content">
+          <h4>Plan My Day</h4>
+          <div class="prompt">"I have an hour, what should I do?"</div>
+          <div class="result">Interactive time-boxed plan. 5 tasks ranked by revenue impact. Go buttons jump to each tool. $350K at stake.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 DOMAINS -->
+<section>
+  <div class="container">
+    <div class="section-badge">8 Business Domains / 32 Tools</div>
+    <h2 class="section-title">One MCP server replaces your entire stack.</h2>
+    <div class="domains-grid">
+      <div class="domain-card">
+        <h4>See My Business</h4>
+        <div class="source">Markster</div>
+        <div class="desc">KPI dashboard, pipeline, tasks, notifications. Full state in one call.</div>
+        <div class="replaces">Replaces <span>HubSpot, Salesforce, Databox, HighLevel</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Research Anything</h4>
+        <div class="source">Markster + Apollo</div>
+        <div class="desc">Live company enrichment. Team, funding, contacts. Any domain, real time.</div>
+        <div class="replaces">Replaces <span>ZoomInfo, Clearbit, Perplexity, Sales Nav</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Spot Buyers</h4>
+        <div class="source">Markster</div>
+        <div class="desc">Person-level intent signals. Pricing visits, ROI calculator, demo requests.</div>
+        <div class="replaces">Replaces <span>6sense, Bombora, RB2B, G2 Intent</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Price and Model Deals</h4>
+        <div class="source">Markster + Puzzle</div>
+        <div class="desc">Interactive pricing sim. Slider for MRR, margin, runway. EV curves.</div>
+        <div class="replaces">Replaces <span>Spreadsheets, Baremetrics, ProfitWell</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Prep and Close</h4>
+        <div class="source">Markster</div>
+        <div class="desc">Executive briefs from all context. Talking points, who to call, what not to say.</div>
+        <div class="replaces">Replaces <span>Gong, People.ai</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Plan My Day</h4>
+        <div class="source">Markster</div>
+        <div class="desc">Time-boxed action plans ranked by revenue impact. Go buttons to each tool.</div>
+        <div class="replaces">Replaces <span>Asana, Monday, ClickUp, Notion AI</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Create Content</h4>
+        <div class="source">Markster</div>
+        <div class="desc">Multi-platform calendar. LinkedIn, X, Facebook, Blog. In your brand voice.</div>
+        <div class="replaces">Replaces <span>Ocoya, Buffer, Hootsuite, Later</span></div>
+      </div>
+      <div class="domain-card">
+        <h4>Prospect Everywhere</h4>
+        <div class="source">Markster</div>
+        <div class="desc">Sequences, enrollment, ICP targeting, domain warmup, deliverability health.</div>
+        <div class="replaces">Replaces <span>Instantly, SmartLead, Clay, Lemlist, Reply.io</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section>
+  <div class="container">
+    <div class="section-badge">6 of 6 Sponsor Integrations</div>
+    <h2 class="section-title">Built with every sponsor in the ecosystem.</h2>
+    <div class="sponsors">
+      <div class="sponsor-card">
+        <div class="name">Anthropic</div>
+        <div class="role">Platform</div>
+        <div class="how">Claude is the primary AI workspace. MCP is the protocol.</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="name">OpenAI</div>
+        <div class="role">Platform</div>
+        <div class="how">ChatGPT is the second platform. Same server, same tools.</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="name">Puzzle</div>
+        <div class="role">Finance</div>
+        <div class="how">burn_multiple, spotlight_anomalies, cash_out_date.</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="name">WorkOS</div>
+        <div class="role">Identity</div>
+        <div class="how">AuthKit + OAuth 2.1 for multi-tenant MCP auth.</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="name">Cloudflare</div>
+        <div class="role">Infrastructure</div>
+        <div class="how">DNS, email infra, domain health monitoring.</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="name">Manufact</div>
+        <div class="role">Deploy</div>
+        <div class="how">One-command deploy to Manufact Cloud.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="container">
+    <h2>Your entire business. One conversation.</h2>
+    <p class="os-line">The operating system for the one-person company.</p>
+    <p class="credit">Ivan Ivanka (CEO) + Attila Sukosd (CTO)</p>
+    <p class="credit" style="margin-top: 4px"><a href="https://markster.ai">markster.ai</a></p>
+    <a href="https://github.com/markster-exec/dealpulse-hackathon" class="link">View on GitHub</a>
+  </div>
+</div>
+
+</body>
+</html>

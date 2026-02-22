@@ -1,0 +1,21 @@
+{
+  "company": "Markster",
+  "company_key": "markster",
+  "available_cash_balance": 101619.05,
+  "monthly_burn": 13218.47,
+  "burn_rate_3mo_avg": 12956.33,
+  "burn_multiple": 0.85,
+  "runway_months": 7.7,
+  "cash_out_date": "2026-10-08",
+  "mrr": 15627.83,
+  "arr": 187533.96,
+  "one_off_revenue_6mo": 173822.14,
+  "gross_margin_pct": 82,
+  "cogs_per_dollar": 0.18,
+  "customers": 41,
+  "avg_deal_size": 38500,
+  "avg_monthly_retainer": 3208,
+  "avg_client_lifetime_months": 14,
+  "commission_rate_pct": 8,
+  "spotlight_anomalies": []
+}

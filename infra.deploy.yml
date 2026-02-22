@@ -1,0 +1,34 @@
+---
+version: 1
+
+# Inventory service id (from markster-ops inventory/services.yml)
+service_id: dealpulse-mcp
+
+# Environment names for deployment commands
+envs:
+  production: prod
+
+# Optional mapping from repo env names to inventory env names.
+# Example: if your repo uses "production" but inventory uses "prod".
+# envs:
+#   production: prod
+#   staging: staging
+
+# Optional provider-specific mapping (informational today).
+# Consumed by tooling over time.
+# provider: railway
+# railway:
+#   project_id: your-railway-project-id
+#   service_id: your-railway-service-id
+
+# Recommended playbook:
+# - UI build is enforced by npm start (runs `npm run build` before server boot).
+#   This guarantees the MCP UI resource serves built `dist/resources/app.html`.
+# - Set runtime keys:
+#   marksterctl env set MARKSTER_TOOL_CALL_LOGGING=true --service dealpulse-mcp --env prod --approve --force
+#   marksterctl env push --service dealpulse-mcp --env prod --approve
+# - Deploy to this service:
+#   marksterctl deploy --service dealpulse-mcp --approve
+# - Validate:
+#   marksterctl status --service dealpulse-mcp
+#   marksterctl health --service dealpulse-mcp
