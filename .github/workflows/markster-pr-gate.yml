@@ -1,0 +1,29 @@
+name: Markster PR Gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - codex/**
+
+permissions:
+  contents: read
+
+jobs:
+  pr-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baseline PR gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          tracked_count=$(git ls-files | wc -l | tr -d ' ')
+          echo "Tracked files: ${tracked_count}"
+          if git grep -nE '^(<<<<<<<|=======|>>>>>>>)' -- . >/tmp/conflicts.txt; then
+            echo 'Merge conflict markers detected:'
+            cat /tmp/conflicts.txt
+            exit 1
+          fi
+          echo 'Baseline PR gate passed.'
