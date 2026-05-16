@@ -17,6 +17,7 @@ envs:
 # Optional runtime metadata (informational today).
 # Keep provider-specific IDs in markster-ops inventory; this repo should only
 # reference Markster service ids.
+# If no repo-specific Azure target is registered yet, use rg-AIDT-v0_ivan as the migration landing zone.
 
 # Recommended playbook:
 # - UI build is enforced by npm start (runs `npm run build` before server boot).
